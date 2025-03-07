@@ -3,9 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disease Detection By Image Processing</title>
+    <link rel="stylesheet" href="diseasedetection.css"> 
 </head>
 <body>
+    <div class="container">
+        <a href="index.html"><img src="/Pictures/logo.jpg" alt="crop images"></a>
+        <nav class="navbar">
+            <div id="headd"><p>Disease Detection By Image Processing</p></div>
+        </nav>
+    </div> 
     
+    <!-- Buttons -->
+    <button type="button" onclick="initWebcam()" id="startWebcamBtn">Start Webcam</button>
+    <button type="button" onclick="stopWebcam()" id="stopWebcamBtn" style="display:none;">Stop Webcam</button>
+    
+    <label for="imageUpload" class="upload-label">Upload Image</label>
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <!-- Side-by-Side Containers for Webcam & Upload -->
+    <div id="main-container">
+        <!-- Webcam Section -->
+        <div class="box">
+            <div class="webcam-box" id="webcam-container"></div>
+            <div id="label-container" class="label-container"></div>
+        </div>
+
+        <!-- Uploaded Image Section -->
+        <div class="box">
+            <div class="upload-box" id="uploaded-image-container"></div>
+            <div id="upload-label-container" class="label-container1"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script>
+        const URL = "https://teachablemachine.withgoogle.com/models/rEaZ321er/";
+        let model, webcam, maxPredictions;
+        let webcamInitialized = false;
+
+        async function loadModel() {
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+        }
+
+        async function initWebcam() {
+            if (webcamInitialized) {
+                alert("Webcam is already running!");
+                return;
+            }
+
+            await loadModel();
+
+            const flip = true; 
+            webcam = new tmImage.Webcam(200, 200, flip);
+            await webcam.setup();
+            await webcam.play();
+            window.requestAnimationFrame(webcamLoop);
+
+            document.getElementById("webcam-container").appendChild(webcam.canvas);
+
+            webcamInitialized = true;
+
+            document.getElementById("startWebcamBtn").disabled = true;
+            document.getElementById("stopWebcamBtn").style.display = "inline-block";
+        }
+
+        async function webcamLoop() {
+            if (webcam && webcamInitialized) {
+                webcam.update();
+                await predictForWebcam(webcam.canvas); // Only updates webcam side
+                window.requestAnimationFrame(webcamLoop);
+            }
+        }
+
+        async function predictForWebcam(imageElement) {
+            const prediction = await model.predict(imageElement);
+
+            const labelContainer = document.getElementById("label-container");
+            labelContainer.innerHTML = "";  // Clear previous webcam predictions
+
+            for (let i = 0; i < maxPredictions; i++) {
+                const classPrediction = `
+                    <div>
+                        ${prediction[i].className}: <strong>${(prediction[i].probability * 100).toFixed(2)}%</strong>
+                    </div>
+                `;
+                labelContainer.innerHTML += classPrediction;
+            }
+        }
+
+        function stopWebcam() {
+            if (webcam && webcamInitialized) {
+                webcam.stop();
+                webcamInitialized = false;
+
+                document.getElementById("startWebcamBtn").disabled = false;
+                document.getElementById("stopWebcamBtn").style.display = "none";
+
+                document.getElementById("webcam-container").innerHTML = "";
+                document.getElementById("label-container").innerHTML = ""; // Clear webcam predictions
+            }
+        }
+
+        document.getElementById("imageUpload").addEventListener("change", async function(event) {
+            await loadModel();
+
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const uploadedImageContainer = document.getElementById("uploaded-image-container");
+                    uploadedImageContainer.innerHTML = ""; // Clear previous image
+
+                    const img = new Image();
+                    img.src = e.target.result;
+                    img.width = 200;
+                    img.height = 200;
+                    uploadedImageContainer.appendChild(img);
+
+                    img.onload = async function () {
+                        await predictForUpload(img); // Only updates uploaded image side
+                    };
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        async function predictForUpload(imageElement) {
+            const prediction = await model.predict(imageElement);
+
+            const uploadLabelContainer = document.getElementById("upload-label-container");
+            uploadLabelContainer.innerHTML = ""; // Clear previous uploaded image predictions
+
+            for (let i = 0; i < maxPredictions; i++) {
+                const classPrediction = `
+                    <div>
+                        ${prediction[i].className}: <strong>${(prediction[i].probability * 100).toFixed(2)}%</strong>
+                    </div>
+                `;
+                uploadLabelContainer.innerHTML += classPrediction;
+            }
+        }
+    </script>
 </body>
 </html>

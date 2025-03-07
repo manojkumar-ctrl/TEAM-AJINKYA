@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container {
+    display: flex;
+    justify-content:center;
+    gap:20px;
+    align-items: center;
+    width: 100%;
+    background-color: #fefae0;
+    padding: 0px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+}
+.overlay {
+    background-color: rgba(255, 248, 220, 0.8);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    color: black;
+    line-height: 1.2;
+}
+
+nav.navbar ul,
+nav.navbar2 ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar a,
+.navbar2 a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    color: #4a4a4a;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar2 a.sign1,
+.navbar2 a.log,
+.navbar2 a.logout {
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a;
+}
+
+.navbar2 a.sign1:hover,
+.navbar2 a.log:hover,
+.navbar a:hover,
+.navbar2 a.logout:hover {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+.container img {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+   border-top-left-radius: 10% ;
+   border-top-right-radius: 10%;
+   border-bottom-right-radius: 10%;
+   border-bottom-left-radius:10% ;
+   background-color: #040c17;
+  margin-left:0.1vh;
+  
+}
+/* General Body Styling */
+body {
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: #eaf8e6; /* Light Green Background */
+    margin: 0;
+    padding: 20px;
+    padding-top: 150px;
+    color: #2c5f2d; /* Dark Green Text */
+}
+
+#headd{
+    font-size: 40px;
+}
+
+/* Heading */
+div {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1d3c1f; /* Dark Green */
+}
+
+/* Buttons */
+button, .upload-label {
+    background-color: #4caf50; /* Green */
+    font-family: 'Poppins';
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+#stopWebcamBtn{
+    background-color: rgb(244, 69, 69);
+}
+
+button:hover, .upload-label:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* File Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Side-by-Side Containers */
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Image and Result Display */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+}
+
+/* Webcam & Uploaded Image Boxes */
+.webcam-box, .upload-box {
+    width: 220px;
+    height: 220px;
+    border: 4px solid #2c5f2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Label Container */
+.label-container{
+    margin-top: 15px;
+    margin-right: 60px;
+    font-size: 16px;
+    padding: 10px;
+    width: 270px;
+    background-color: #d4edda; /* Light Green */
+    color: #155724; /* Dark Green */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+
+}
+.label-container1{
+    margin-top: 15px;
+    margin-left: 60px;
+    font-size: 16px;
+    padding: 10px;
+    width: 265px;
+    background-color: #d4edda; /* Light Green */
+    color: #155724; /* Dark Green */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+
+}
+.upload-label-container{
+    margin-top: 15px;
+    margin-right: 60px;
+    font-size: 16px;
+    padding: 10px;
+    width: 265px;
+    background-color: #d4edda; /* Light Green */
+    color: #155724; /* Dark Green */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+
+}
+
+/* Decorative Plant Image */
+.plant-decoration {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
