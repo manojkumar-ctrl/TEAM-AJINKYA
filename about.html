@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="index.html">
+        <img class = "img" src="Pictures/logo.jpg" alt="ShipEase Logo"></a>
+        <h1>About CropAI</h1>
+    </header>
+
+    <section class="about-intro">
+        <div class="container">
+            <p><strong>Welcome to CropAI</strong><br> At CropAi, our mission is to empower farmers and agribusinesses with innovative AI-driven solutions that enhance crop productivity, ensure sustainable farming, and secure global food supply.
+
+               <p> We are committed to making advanced technology accessible to every farmer, enabling them to make data-driven decisions that boost yields, reduce resource waste, and protect crops from diseases and environmental threats</p>
+        </div>
+    </section>
+
+    <section class="about-mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>We strive to bridge the gap between traditional farming wisdom and modern innovation, providing affordable, accessible, and data-driven solutions that help farmers make smarter decisions, reduce risks, and adapt to climate challenges.
+</p>
+        </div>
+    </section>
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question"> What is CropAi?</div>
+            <div class="faq-answer">
+                CropAi is an AI-powered agricultural technology platform that helps farmers monitor crops, detect diseases, predict yields, and optimize farming practices using artificial intelligence, machine learning, and remote sensing technologies
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question"> How does CropAi work?</div>
+            <div class="faq-answer">
+                CropAi collects data from images, drones, sensors, and satellites. Using advanced AI algorithms, we analyze this data to provide real-time insights into crop health, potential diseases, soil conditions, and weather impact. Farmers receive personalized recommendations to improve crop productivity and reduce risks.
+
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Who can use CropAi?</div>
+            <div class="faq-answer">
+                CropAi is designed for:
+
+                        Individual farmers
+                    Agribusinesses
+                    Agricultural cooperatives
+                        Research institutions
+                    Government agricultural departments
+            Whether you have a small farm or large-scale agricultural operations, CropAi can be customized to fit your needs.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">  How accurate is CropAi’s disease detection system?</div>
+            <div class="faq-answer">
+                Our AI models are trained on thousands of crop images and agricultural datasets, ensuring a high accuracy rate in identifying crop diseases, nutrient deficiencies, and pest infestations. Accuracy improves over time as more data is collected and analyzed.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question"> Is CropAi suitable for all crops?</div>
+            <div class="faq-answer">
+                Yes! CropAi supports a wide variety of crops including:
+
+                Cereals (wheat, rice, maize)
+                Fruits (mango, banana, apple)
+                Vegetables (tomato, potato, onion)
+                Cash crops (cotton, sugarcane) We are continuously expanding our crop database to cover more varieties.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question"> How can I access CropAi services?</div>
+            <div class="faq-answer">
+                You can access CropAi through:
+
+
+Our web platform (for advanced analytics and farm management)
+API integration (for agritech companies and partners)
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question"> Do I need any special equipment to use CropAi?</div>
+            <div class="faq-answer">
+                No, all you need is a smartphone to upload images of crops or access our dashboard. However, for advanced monitoring, we also support drone and sensor data integration if available.
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- JavaScript -->
+    <script>
+        // JavaScript to toggle visibility of answers
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+   
+       
+      </script>
+
+
+
+    <footer class="page-footer">
+        <p>&copy; 2025 CropAI. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Page Styles */
+body {
+    font-family : 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #a8d5e2;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.page-header {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    position: relative;
+}
+
+.page-header img {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius:10px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.info{
+    /* background-color: white; */
+    background-color: #edeec9;
+    /* background-color: #85f3ff; */
+    padding: 1px 0;
+    text-align: center;
+}
+
+.info_p1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    display:flex;
+}
+.info_p{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    display:flex;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px 40px 30px 40px;
+}
+
+.contact-form{
+    position: relative;
+    width: 1000px;
+    margin: 60px 30px 0 177px;
+    padding: 0px 20px 0 20px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    overflow: hidden;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+
+.input-box input {
+    width: 100%;
+    display : flex;
+    padding: 10px 1px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #00bcd4;
+}
+
+.input-box label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #ffffff;
+    padding: 0 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.input-box .rm{
+    display : flex;
+    width : 275px;
+    background-color: black;
+    scale : 1.2;
+}
+
+
+
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.01); /* Slightly scale the button on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2)
+    
+}
+
+
+.image-slider {
+    width: 50%;
+    position: relative;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: left 0.6s ease-in-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.image-slider img.active {
+    left: 0;
+}
+
+.media-container{
+        padding: 50px 0;
+        text-align: center;
+}
+.headlogo{
+                   
+        /* background-color: white;  */
+        background-color: #edeec9;
+        height: auto;
+        width: auto; 
+}
+
+.media-container{
+        display:flex;                /* Use flex layout */
+        justify-content:space-evenly; /* Space logos evenly */
+        align-items:center;          /* Center logos vertically */
+        flex-wrap:wrap;              /* Wrap to next line on small screens */
+        gap: 20px;                    /* Space between logos */
+        padding: 20px;   
+        margin-left: 155px;             /* Optional padding around container */
+}
+
+.insta{
+          /* Smooth transition on hover *//* Center icon within the container */
+        display: inline-block;
+        color:black;
+        font-size: 80px;
+          height: auto;
+          width: auto; 
+          transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth effect */
+          
+}
+.insta:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly scale the icon on hover */
+}
+.facebook{
+    display: inline-block;
+    font-size: 80px;
+      height: auto;
+      width: auto; 
+      transition: color 0.3s ease, transform 0.3s ease;
+}
+.facebook:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly scale the icon on hover */
+}
+.twitter{
+    display: inline-block;
+    font-size: 80px;
+      height: auto;
+      width: auto;
+      transition: color 0.3s ease, transform 0.3s ease;
+}
+.twitter:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly scale the icon on hover */
+}
+ /* /* faq */
+
+a{
+    color: black;
+}
+
+.footer{
+    margin-top: 15px;
+    
+}
+.foot-panel{
+    background-color: #37475a;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2 rem;
+    
+
+}
+.foot-panel a{
+    color: white;
+    text-decoration: none;
+}
+
+.foot-panel a:hover{
+    color: whitesmoke; /* Change color on hover */
+    transform: scale(1.2);
+}
+
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+display: block;
+font-size: 0.85rem;
+margin-top: 10px;
+color:white;
+}
+
+.copyright{
+    padding-top:5px;
+}
+
+.page-footer {
+    background-color: #00e5ff;
+    color:black;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+    font-size: 17px;
+}    

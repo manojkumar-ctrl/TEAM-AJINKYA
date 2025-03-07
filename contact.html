@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+<!-- <link rel="stylesheet" href="https://script.google.com/macros/s/AKfycbzJRACLylvkuIfmKpVauATnFAeXcBr4C9F5raI_n5r56BUcOpwxiGsnV93FtH7xiR2-1w/exec"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html"><img class="img" src="Pictures/logo.jpg" alt="ShipEase Logo"></a>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="info">
+        <h1>HELP CENTER
+
+            <!-- NOT WORKING TAKE A REVIEW -->
+            <div class="headlogo"><i class="fa-solid fa-headset"></i></div>
+        </h1>
+    </div>
+
+
+    <div class="info_p"></div>
+    <h2>Have a Complaint? Fill the form,we'll reach out soon...</h2>
+
+
+    <div class="contact-form" id="contact-Form" style="display: block;">
+        <h2>Details</h2>
+
+    <!-- <form name='submit-to-google-sheet'> -->
+        <!-- <form autocomplete="off" method="post" name='google-sheet'></form> -->
+        <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+            
+         <!-- <form onsubmit="sendMail(); reset(); return false;"> -->
+            <input type="hidden" name="access_key" value="fcf9de80-9fd5-48e6-a123-feb81202067d">
+            <div class="input-box">
+                <label>Name: </label>
+                <input type="text" name="name" required>
+
+            </div>
+            <div class="input-box">
+                <label>Email-ID: </label>
+                <input type="text" name="email" required>
+
+            </div>
+            <div class="input-box">
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}" required>
+            </div>
+            <div class="input-box">
+                <label>Subject: </label>
+                <input type="text" name="Topic" required>
+                <br>
+                <div class="input-box">
+                    <label>Message: </label>
+                <input type="text" name="message" required>
+
+                </div>
+
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            
+        </form>
+    </div>
+    <!-- JavaScript for reseting the form -->
+    <!-- <script>document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Do something with form data (e.g., send it to a server)
+        console.log("Form submitted!");
+
+        // Reset the form
+        this.reset();
+    });
+    </script> -->
+
+      <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendMail() {
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "manojkumar.cs23@bmsce.ac.in",
+    Password : "Manojkumar@999!",
+    To : 'manojkumarnalwar@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+      </script> -->
+        <!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz8dNabj9wDdUIrz6iVJDypSoIQghKNSEXZ_3FuJRjPVtqqVVnX9hC9iEx38ut-yA4w/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script> -->
+   
+
+    <!-- JavaScript -->
+   
+    
+
+    <div class="info_p1">
+        <h4>Need assistance? We're happy to help, reach us out through the appropriate channels below.</h4>
+    </div>
+
+    <div class="media-container">
+        <div class="insta">
+            <a href="add instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="facebook">
+            <a href="add facebook handle"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="twitter">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="twitter">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <br>
+    </div>
+
+    <footer>
+        <div class="foot-panel">
+            <a href="contact.html">Back to Top</a>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>About CropAi</p>
+                <a>
+
+                    AI-powered agri-tech platform
+                    Crop monitoring, disease detection, yield prediction
+                    Data-driven insights for farmers</a>
+                <a> Crop monitoring, disease detection, yield prediction</a>
+                <a> Data-driven insights for farmers</a>
+               
+
+            </ul>
+            <ul>
+                <p>Contact </p>
+                <a>Email: suppPhone: +91 98765 43210ort@cropai.com</a>
+                <a>Phone: +91 98765 43210</a>
+                <a>Address: CropAi Technologies, Plot 123, AgriTech Park, Bangalore, India</a>
+               
+
+            </ul>
+          
+        </div>
+
+
+        <footer class="page-footer">
+            <p>&copy; 2024 ShipEase. All rights reserved.</p>
+        </footer>
+
+
+
+        <!-- </div> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+/* General Page Styles */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color:#f0ead2;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    /* background-color: #cdfaff; */
+    background-color: #7f4f24;
+    /* background-color: #48cae4; */
+    color: #ffffff;
+    /* padding: 5px 0; */
+    text-align: center;
+}
+.faq-answer {
+    display: none;
+}
+
+.page-header .img {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    /* border: 2px solid #00e5ff; */
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.about-intro {
+    padding: 30px 0;
+    /* background-color: #48cae4; */
+    /* background-color: #00e5ff; */
+    background-color:#c2c5aa;
+    text-align: center;
+}
+
+.about-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Mission Section */
+.about-mission {
+    background-color: #85f3ff;
+    background-color: #f0ead2;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.about-mission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+.about-team {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #85f3ff;
+}
+
+.about-team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team-images {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.team-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.about-gallery {
+    background-color: #85f3ff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    font-size : 20px;
+    font-weight: 600;
+}
+
+
+
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Footer Section */
+.page-footer {
+    background-color: #2e2d2d;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    margin-top: 0px;
+}
+
+.page-footer p {
+    font-size: 22px;
+}
+
+
+.faq-container {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;/* White background for clean look   */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth  */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.faq-container h1{
+    margin-right: 100%;
+   white-space: nowrap;
+    
+}
+
+/* FAQ Header */
+ .faq-container h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FAQ Question */
+.faq-question {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f7f7f7; /* Slightly gray background */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Soft border for separation */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for FAQ Question */
+.faq-question:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid black; /* Add accent color on the left */
+    border-radius: 8px;
+    color: #555;
+    font-size: 16px;
+}  */
+
+/* Mobile responsiveness: Stacking FAQ items on smaller screens */
+/* @media (max-width: 600px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-question {
+        padding: 12px;
+    }
+
+    .faq-answer {
+        padding: 12px;
+    }
+} */
+
+/* Button or link for social media: Just an example */
+ .faq-container a {
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.faq-container a:hover {
+    color: #0056b3;
+} 

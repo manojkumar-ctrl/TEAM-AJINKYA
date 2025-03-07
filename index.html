@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Navbar Container -->
+    <div class="container">
+            <a href="index.html"><img src="/Pictures/logo.jpg" alt="crop images" ></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yieldprediction.html">Yield Predictor</a></li>
+                <li><a href="dieasedetection.html">Disease Detection</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <nav class="navbar2">
+            <ul>
+                <li><a id="loginButton" class="log" href="#" onclick="showLoginForm()">LOGIN</a></li>
+                <li><a id="signupButton" class="sign1" href="#" onclick="showSignUpForm()">SIGN UP</a></li>
+                <li><a id="logoutButton" class="logout" href="#" onclick="logout()">LOGOUT</a></li>
+            </ul>
+        </nav> -->
+    </div>
+
+    <!-- Background Image Section -->
+    <div class="bgimage" id="bgimage1">
+      
+        <div class="overlay" id="welcomeMessage">
+            <h1>Hi,<br> Welcome to CropAI</h1>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <main id="main">
+        <section class="hero">
+            <h2>Sow Smart, Reap Big.</h2>
+            <p>Efficient, Reliable, Harness Data, Maximize Harvest</p>
+        </section>
+        <section class="features-wrapper">
+            <div class="circle-image">
+                 <img src="" alt="">
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-cogs"></i>
+                    <h3>AI analysis<br>Yield Forcasting</h3>
+                    <p>Higher profits start with better planning</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>Ai-Power Predictions<br>Whether Impact Analysis</h3>
+                    <p>User Friendly</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Diease Detection<br>Soil Analysis</h3>
+                    <p>Predicts potential threats </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Wrapper for Forms -->
+    <!-- <div class="wrapper" id="wrapped" style="display:none">
+        <!-- Login Form -->
+        <!-- <div class="login-form" id="LoginForm" style="display:none" onsubmit="login(event)">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" name="username" id="loginUsername" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="loginPassword" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="logreg-link">
+                    <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
+                </div>
+                <div class="logreg-link">
+                    <p>Haven't verfied your account yet? <a href="#" onclick="showOtpForm()">Otp verification </a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <!-- <div class="signup-form" id="SignupForm" style="display:none" onsubmit="saveUserdata(event)">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="input-box">
+                    <input type="text" name="username" id="signupUsername" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="signupEmail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="signupPassword" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="confirm_password" id="signupConfirmPassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="signreg-link">
+                    <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="otp-form" id="OtpForm" style="display:none" >
+            <h2>OTP Verification</h2>
+                <form id="otpForm" onsubmit="verifyOtp(event)">
+                    <div class="input-box">
+                        <input type="email" name="email" id="otpEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="otp" id="otpCode" required>
+                        <label>OTP</label>
+                    </div>
+                    <button type="submit" class="btn">Verify OTP</button>
+                </form>
+        </div>
+    </div>  -->
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Pictures/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer class="page-footer" id="footer">
+        <p>&copy; 2025 CropAI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
