@@ -1,95 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-/* General Page Styles */
+
 body {
-    font-family : 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #a8d5e2;
 }
 
-
 .container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
-
 .page-header {
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: #ffffff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
     text-align: center;
-    padding: 22px;
+    padding: 1.5rem;
     position: relative;
 }
 
 .page-header img {
-    width: 140px;
+    width: 8.75rem;
     height: auto;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius:10px;
+    top: 0;
+    left: 0;
+    border-radius: 0.625rem;
 }
 
 .page-header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.info{
-    /* background-color: white; */
+.info, .headlogo {
     background-color: #edeec9;
-    /* background-color: #85f3ff; */
-    padding: 1px 0;
+    padding: 0.5rem 0;
     text-align: center;
 }
 
-.info_p1{
-    font-size: 36px;
-    margin-bottom: 20px;
+.info_p, .info_p1 {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
     text-align: center;
-    display:flex;
-}
-.info_p{
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    display:flex;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form {
-    flex: 1;
-    padding: 20px 40px 30px 40px;
-}
-
-.contact-form{
     position: relative;
-    width: 1000px;
-    margin: 60px 30px 0 177px;
-    padding: 0px 20px 0 20px;
-    height: 500px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    width: 62.5rem;
+    max-width: 90%;
+    margin: 15vh auto 0 auto;
+    padding: 1.25rem;
+    height: 31.25rem;
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.15);
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
 .input-box {
     position: relative;
-    margin-bottom: 20px;
-   
+    margin-bottom: 1.25rem;
+    width: 100%;
 }
 
 .input-box input {
     width: 100%;
-    display : flex;
-    padding: 10px 1px;
-    font-size: 18px;
+    padding: 0.625rem 0.0625rem;
+    font-size: 1.125rem;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: 0.3s;
 }
 
@@ -99,42 +85,38 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 .input-box label {
     position: absolute;
-    top: -10px;
-    left: 15px;
-    background: #ffffff;
-    padding: 0 5px;
+    top: -0.625rem;
+    left: 0.9375rem;
+    background: #fff;
+    padding: 0 0.3125rem;
     color: #666;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-.input-box .rm{
-    display : flex;
-    width : 275px;
+.input-box .rm {
+    display: flex;
+    width: 17.1875rem;
     background-color: black;
-    scale : 1.2;
+    transform: scale(1.2);
 }
-
-
 
 .btn {
     width: 100%;
-    padding: 12px 0;
+    padding: 0.75rem 0;
     background-color: #00bcd4;
     border: none;
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 20px;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.25rem;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #0097a7;
-    transform: scale(1.01); /* Slightly scale the button on hover */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2)
-    
+    transform: scale(1.01);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.2);
 }
-
 
 .image-slider {
     width: 50%;
@@ -147,132 +129,125 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     object-fit: cover;
     position: absolute;
     transition: left 0.6s ease-in-out;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
 }
 
 .image-slider img.active {
     left: 0;
 }
 
-.media-container{
-        padding: 50px 0;
-        text-align: center;
-}
-.headlogo{
-                   
-        /* background-color: white;  */
-        background-color: #edeec9;
-        height: auto;
-        width: auto; 
-}
-
-.media-container{
-        display:flex;                /* Use flex layout */
-        justify-content:space-evenly; /* Space logos evenly */
-        align-items:center;          /* Center logos vertically */
-        flex-wrap:wrap;              /* Wrap to next line on small screens */
-        gap: 20px;                    /* Space between logos */
-        padding: 20px;   
-        margin-left: 155px;             /* Optional padding around container */
-}
-
-.insta{
-          /* Smooth transition on hover *//* Center icon within the container */
-        display: inline-block;
-        color:black;
-        font-size: 80px;
-          height: auto;
-          width: auto; 
-          transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth effect */
-          
-}
-.insta:hover {
-    color: #007bff; /* Change color on hover */
-    transform: scale(1.2); /* Slightly scale the icon on hover */
-}
-.facebook{
-    display: inline-block;
-    font-size: 80px;
-      height: auto;
-      width: auto; 
-      transition: color 0.3s ease, transform 0.3s ease;
-}
-.facebook:hover {
-    color: #007bff; /* Change color on hover */
-    transform: scale(1.2); /* Slightly scale the icon on hover */
-}
-.twitter{
-    display: inline-block;
-    font-size: 80px;
-      height: auto;
-      width: auto;
-      transition: color 0.3s ease, transform 0.3s ease;
-}
-.twitter:hover {
-    color: #007bff; /* Change color on hover */
-    transform: scale(1.2); /* Slightly scale the icon on hover */
-}
- /* /* faq */
-
-a{
-    color: black;
-}
-
-.footer{
-    margin-top: 15px;
-    
-}
-.foot-panel{
-    background-color: #37475a;
-    color: rgb(255, 255, 255);
-    height: 50px;
+.media-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2 rem;
-    
-
-}
-.foot-panel a{
-    color: white;
-    text-decoration: none;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 1.25rem;
 }
 
-.foot-panel a:hover{
-    color: whitesmoke; /* Change color on hover */
+.insta, .facebook, .twitter {
+    font-size: 5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.insta:hover, .facebook:hover, .twitter:hover {
+    color: #007bff;
     transform: scale(1.2);
 }
 
+a {
+    color: black;
+}
 
-.foot-panel2{
+.footer {
+    margin-top: 1rem;
+}
+
+.foot-panel {
+    background-color: #37475a;
+    color: #fff;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.foot-panel a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-panel a:hover {
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+
+.foot-panel2 {
     background-color: #222f3d;
-    color: white;
-    height: 300px;
+    color: #fff;
+    min-height: 18.75rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-ul{
-    margin-top: 20px;
+ul {
+    margin-top: 1.25rem;
 }
 
-ul a{
-display: block;
-font-size: 0.85rem;
-margin-top: 10px;
-color:white;
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.625rem;
+    color: #fff;
 }
 
-.copyright{
-    padding-top:5px;
+.copyright {
+    padding-top: 0.3125rem;
 }
 
 .page-footer {
     background-color: #00e5ff;
-    color:black;
+    color: black;
     text-align: center;
-    padding: 1px;
-    position: relative;
-    font-size: 17px;
-}    
+    padding: 0.625rem;
+    font-size: 1.0625rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 10vh auto;
+    }
+    .image-slider {
+        display: none;
+    }
+    .info_p, .info_p1 {
+        font-size: 1.75rem;
+    }
+    .media-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header img {
+        width: 5rem;
+    }
+    .page-header h1 {
+        font-size: 1.25rem;
+    }
+    .info_p, .info_p1 {
+        font-size: 1.5rem;
+    }
+    .insta, .facebook, .twitter {
+        font-size: 3.5rem;
+    }
+    .foot-panel {
+        font-size: 1rem;
+    }
+}

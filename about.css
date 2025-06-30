@@ -1,222 +1,223 @@
 /* General Page Styles */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+    font-size: 62.5%; /* 1rem = 10px for easier conversion */
+}
+
 body {
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
-    background-color:#f0ead2;
+    background-color: #f0ead2;
 }
 
 .container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .page-header {
-    /* background-color: #cdfaff; */
     background-color: #7f4f24;
-    /* background-color: #48cae4; */
     color: #ffffff;
-    /* padding: 5px 0; */
     text-align: center;
-}
-.faq-answer {
-    display: none;
 }
 
 .page-header .img {
-    width: 125px;
+    width: 12.5rem;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-
-    /* border: 2px solid #00e5ff; */
 }
 
 .page-header h1 {
-    font-size: 48px;
+    font-size: 4.8rem;
     margin: 0;
 }
 
 .about-intro {
-    padding: 30px 0;
-    /* background-color: #48cae4; */
-    /* background-color: #00e5ff; */
-    background-color:#c2c5aa;
+    padding: 3rem 0;
+    background-color: #c2c5aa;
     text-align: center;
 }
 
 .about-intro p {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-/* Mission Section */
 .about-mission {
-    background-color: #85f3ff;
     background-color: #f0ead2;
-    padding: 30px 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
 .about-mission h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
 }
 
-/* Team Section */
 .about-team {
-    padding: 50px 0;
+    padding: 5rem 0;
     text-align: center;
     background-color: #85f3ff;
 }
 
 .about-team h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
 }
 
 .team-images {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin-top: 30px;
+    gap: 10rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .team-images img {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
-/* Gallery Section */
 .about-gallery {
     background-color: #85f3ff;
-    padding: 50px 0;
+    padding: 5rem 0;
     text-align: center;
 }
 
 .about-gallery h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
 }
 
 figure {
     display: inline-block;
-    margin: 20px;
+    margin: 2rem;
     text-align: center;
-    font-size : 20px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
-
-
 img {
-    width: 300px;
-    height: 200px;
+    width: 30rem;
+    height: 20rem;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
-/* Footer Section */
+
 .page-footer {
     background-color: #2e2d2d;
     color: #fff;
     text-align: center;
-    padding: 1px 0;
-    margin-top: 0px;
+    padding: 1rem 0;
 }
 
 .page-footer p {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
-
 
 .faq-container {
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;/* White background for clean look   */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth  */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 4rem 10%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.faq-container h1{
-    margin-right: 100%;
-   white-space: nowrap;
-    
-}
-
-/* FAQ Header */
- .faq-container h1 {
-    font-size: 28px;
+.faq-container h1 {
+    font-size: 2.8rem;
     font-weight: 500;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-/* FAQ Question */
 .faq-question {
     font-weight: 600;
     cursor: pointer;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #f7f7f7; /* Slightly gray background */
-    border-radius: 8px;
-    border: 1px solid #ddd; /* Soft border for separation */
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #f7f7f7;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #ddd;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for FAQ Question */
 .faq-question:hover {
-    background-color: #007bff; /* Blue background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #007bff;
+    color: #fff;
 }
 
-/* FAQ Answer */
 .faq-answer {
     display: none;
-    margin: 10px 0;
-    padding: 15px;
+    margin: 1rem 0;
+    padding: 1.5rem;
     background-color: #f9f9f9;
-    border-left: 5px solid black; /* Add accent color on the left */
-    border-radius: 8px;
+    border-left: 0.5rem solid black;
+    border-radius: 0.8rem;
     color: #555;
-    font-size: 16px;
-}  */
+    font-size: 1.6rem;
+}
 
-/* Mobile responsiveness: Stacking FAQ items on smaller screens */
-/* @media (max-width: 600px) {
-    .faq-container {
-        padding: 15px;
-    }
-
-    .faq-question {
-        padding: 12px;
-    }
-
-    .faq-answer {
-        padding: 12px;
-    }
-} */
-
-/* Button or link for social media: Just an example */
- .faq-container a {
-    font-size: 24px;
+.faq-container a {
+    font-size: 2.4rem;
     color: #007bff;
     transition: color 0.3s ease;
 }
 
 .faq-container a:hover {
     color: #0056b3;
-} 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-images {
+        gap: 5rem;
+    }
+
+    .team-images img,
+    img {
+        width: 20rem;
+        height: auto;
+    }
+
+    .faq-container {
+        margin: 2rem 5%;
+    }
+
+    .faq-question,
+    .faq-answer {
+        padding: 1.2rem;
+    }
+
+    .page-header h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-intro p {
+        font-size: 1.6rem;
+    }
+
+    .about-mission h2,
+    .about-team h2,
+    .about-gallery h2 {
+        font-size: 2.8rem;
+    }
+
+    .page-footer p {
+        font-size: 1.8rem;
+    }
+}

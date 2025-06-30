@@ -15,16 +15,15 @@ body {
     width: 100%;
 }
 
-/* Navbar */
 .container {
     display: flex;
     justify-content:center;
-    gap:20px;
+    gap:1.25rem;
     align-items: center;
     width: 100%;
     background-color: #fefae0;
-    padding: 15px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -32,35 +31,32 @@ body {
 }
 
 .container img {
-    width: 100px;
+    width: 6.25rem;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-   border-top-left-radius: 10% ;
-   border-top-right-radius: 10%;
-   border-bottom-right-radius: 10%;
-   border-bottom-left-radius:10% ;
-   background-color: #040c17;
-  margin-left:0.1vh;
+    border-radius: 10%;
+    background-color: #040c17;
+    margin-left: 0.1vh;
 }
 
 nav.navbar ul,
 nav.navbar2 ul {
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
     align-items: center;
 }
 
 .navbar a,
 .navbar2 a {
     text-decoration: none;
-    font-size: 18px;
-    padding: 8px 16px;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
     color: #4a4a4a;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: 0.3s;
 }
 
@@ -68,7 +64,7 @@ nav.navbar2 ul {
 .navbar2 a.log,
 .navbar2 a.logout {
     background-color: #ffffff;
-    border: 1px solid #4a4a4a;
+    border: 0.0625rem solid #4a4a4a;
 }
 
 .navbar2 a.sign1:hover,
@@ -79,13 +75,10 @@ nav.navbar2 ul {
     color: #ffffff;
 }
 
-/* Background Image Section */
 .bgimage {
     width: 100%;
     height: 60vh;
-    /* Fixed height for the image */
     background-image: url('/Pictures/large-green-rice-field-with-green-rice-plants-rows.jpg');
-    /* Replace with your image path */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -96,10 +89,10 @@ nav.navbar2 ul {
 
 .overlay {
     background-color: rgba(255, 248, 220, 0.8);
-    padding: 40px;
+    padding: 2.5rem;
     text-align: center;
-    border-radius: 10px;
-    font-size: 50px;
+    border-radius: 0.625rem;
+    font-size: 3.125rem;
 }
 
 .overlay h1 {
@@ -108,20 +101,17 @@ nav.navbar2 ul {
     line-height: 1.2;
 }
 
-/* New Section Below Image */
 main {
     margin-top: 0;
-    /* Ensure it starts immediately below the header or background */
     width: 100%;
     background-color: #95d5b2;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 2rem;
     background-color: #52b788;
-    border-top: 1px solid #ddd;
+    border-top: 0.0625rem solid #ddd;
 }
 
 .hero h2 {
@@ -135,31 +125,27 @@ main {
     color: #666;
 }
 
-/* Features Section */
 .features {
     display: flex;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    /* Space between the feature boxes */
     padding: 2rem;
     background-color:#95d5b2;
     position: relative;
     flex-wrap: wrap;
-    /* Ensures responsiveness on smaller screens */
 }
 
 .features .feature {
     text-align: center;
     height: auto;
-    width: 385px;
-    /* Set a consistent width for each feature */
+    width: 24rem;
     background-color: #67abff;
     padding: 1.5rem;
-    border-radius: 12px;
-    border: solid 4px black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    border: 0.25rem solid black;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .features .feature i {
@@ -179,78 +165,66 @@ main {
     color: #666;
 }
 
-/* Circular Image Above Features */
 .circle-image {
     position: absolute;
-    top: -108px;
-    /* Ensure it doesn't overlap with the text */
+    top: -6.75rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     background-image: url("Pictures/features.jpg");
-    /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    /* Makes the image circular */
-    border: 4px solid #fff;
-    /* Optional border for better design */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Add depth */
+    border: 0.25rem solid #fff;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
-
 
 .features-wrapper {
     position: relative;
-    margin-top: 80px;
-    /* Ensures proper spacing below the circular image */
+    margin-top: 5rem;
 }
 
 .page-footer {
     width: 100%;
-    background-color:darkgreen;
+    background-color: darkgreen;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 0px;
+    padding: 1.25rem 0;
 }
 
 .page-footer p {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
-/* Forms */
 .wrapper {
     width: 90%;
-    max-width: 500px;
+    max-width: 31.25rem;
     margin: 23.5vh auto;
     padding: 2rem;
     background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
 }
 
-
-
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .input-box {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .input-box input {
     width: 100%;
-    padding: 10px 15px;
-    font-size: 18px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    padding: 0.625rem 0.9375rem;
+    font-size: 1.125rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.5rem;
     transition: 0.3s;
 }
 
@@ -260,22 +234,22 @@ h2 {
 
 .input-box label {
     position: absolute;
-    top: -10px;
-    left: 15px;
+    top: -0.625rem;
+    left: 0.9375rem;
     background: #ffffff;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     color: #666;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .btn {
     width: 100%;
-    padding: 12px 0;
+    padding: 0.75rem 0;
     background-color: #00bcd4;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -286,9 +260,9 @@ h2 {
 
 .logreg-link,
 .signreg-link {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .logreg-link a,
@@ -306,18 +280,63 @@ h2 {
 
 .video-container {
     width: 100%;
-    max-width: 100%; /* Ensures it doesn't exceed the container size */
-    margin: 0 auto;     
-    background-color:#95d5b2; 
-                 /* Center if the parent container has width constraints */
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:#95d5b2;
 }
-
 
 .video-container video {
     width: 55%;
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes unwanted inline spacing */
-    margin-left: 330px;
-    border-radius:7%;
-    margin-bottom:30px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.875rem auto;
+    border-radius: 7%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .feature {
+        width: 80%;
+    }
+
+    .video-container video {
+        width: 90%;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a,
+    .navbar2 a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .features .feature {
+        width: 95%;
+    }
 }
